@@ -6,8 +6,14 @@ Fully functional and easy to use sticky sidebar for [WordPress](https://wordpres
 For all further information, see the demo at http://fpdemo-ss.urbino.nl.
 
 ## Change log
-1.0 Initial release
+**Version 1.0**
 
-1.1 Corrected behaviour when the topbar is not sticky
+- Initial release
 
-1.2 Added the class 'fixed' to the sidebar when it does not move "normally" with the main page contents when scrolling, allowing additional styling
+**Version 1.1**
+
+- Corrected behaviour when the topbar is not sticky
+
+**Version 1.2**
+
+- Added the class 'fixed' to the sidebar when it does not move "normally" with the main page contents when scrolling, allowing additional styling
