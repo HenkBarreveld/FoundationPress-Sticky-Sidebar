@@ -9,7 +9,7 @@ For all further information, see the demo at http://fpdemo-ss.urbino.nl.
 
 **Version 1.3**
 
-- First bug fix: with long-content/long-sidebar, the sidebar scrolled before the topbar. Added z-index setting. 
+- First bug fix: In the long-content/long-sidebar example, the sidebar scrolled before the topbar. Replaced sidebar class "fixed" by "sidebar-fixed". 
 
 **Version 1.2**
 

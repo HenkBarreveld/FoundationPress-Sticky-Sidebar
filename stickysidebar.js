@@ -25,7 +25,7 @@ $(document).ready(function () {
         if (!sidebarSticky) {               // case: no sidebar or row with class="sidebar-nostick"
             return;
         }
-        sidebar.removeClass('fixed');
+        sidebar.removeClass('sidebar-fixed');
         sidebar.removeAttr('style');
         sidebarHeight = sidebar.outerHeight(true);
         if (layoutBroken || (contentHeight < sidebarHeight)) {
@@ -37,11 +37,11 @@ $(document).ready(function () {
         if (rowTop >= topbarBottom) {         
             return;                         // row top is on the page and below the topbar
         }
-        sidebar.addClass('fixed');
+        sidebar.addClass('sidebar-fixed');
         var footerDistance = $('#footer-container').offset().top - $(window).scrollTop() - topbarBottom - sidebarHeight;
         sidebarTop = topbarBottom + ((footerDistance < 0) ? footerDistance : 0);
                // avoid sidebar overlapping footer, if viewport height is maller than sidebar height
-        sidebar.css({'position': 'fixed', 'top': sidebarTop, 'left': sidebarLeft, 'width': sidebarWidth, 'z-index': '-1'});
+        sidebar.css({'position': 'fixed', 'top': sidebarTop, 'left': sidebarLeft, 'width': sidebarWidth});
     }
 
     function sidebarInf() {                // function called on window load and window resize
