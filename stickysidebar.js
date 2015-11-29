@@ -1,5 +1,5 @@
 /*!
- * Sticky Sidebar v1.2
+ * Sticky Sidebar v1.3
  *
  * Sticky Sidebar for FoundationPress
  * http://urbino.nl/fpdemo-ss
@@ -41,7 +41,7 @@ $(document).ready(function () {
         var footerDistance = $('#footer-container').offset().top - $(window).scrollTop() - topbarBottom - sidebarHeight;
         sidebarTop = topbarBottom + ((footerDistance < 0) ? footerDistance : 0);
                // avoid sidebar overlapping footer, if viewport height is maller than sidebar height
-        sidebar.css({'position': 'fixed', 'top': sidebarTop, 'left': sidebarLeft, 'width': sidebarWidth});
+        sidebar.css({'position': 'fixed', 'top': sidebarTop, 'left': sidebarLeft, 'width': sidebarWidth, 'z-index': '-1'});
     }
 
     function sidebarInf() {                // function called on window load and window resize
