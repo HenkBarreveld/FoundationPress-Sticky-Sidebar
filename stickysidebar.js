@@ -81,12 +81,11 @@ $(document).ready(function () {
         }, '400');
     });
     
-    // debugging: on ESC press, make one or more alerts
+    /* debugging: on ESC press, make one or more alerts
     $(window).keypress(function(event) {
         var key = event.keyCode;
         if (event.keyCode == 27) {
-            alert("topbarBottom: " + $('.top-bar-container')[0].getBoundingClientRect().top + $('.top-bar-container').outerHeight(true));
-            alert("rowTop: " + rowTop);
+            alert("ESC-key pressed");
         }
-    });
+    }); */
 });
